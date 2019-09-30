@@ -3,8 +3,8 @@
 #define WS_RELOAD			(60 - 1)											// (48000000/800000)	
 #define WS_PRESCALER	0
 #define WS_PIXEL			83														// LED pixels, music(80) + mode(3)
-#define WS_LOGIC_1		44														// High Bit Duty
-#define WS_LOGIC_0		16														// Low Bit Duty
+#define WS_LOGIC_1		38														// High Bit Duty
+#define WS_LOGIC_0		19														// Low Bit Duty
 #define	WS_24BITS			24														// Number of Bits of each LED
 #define WS_BLOCK			((WS_PIXEL + 3) * WS_24BITS)	// PDMA transfer blocks
 #define WS_GENERAL		80
