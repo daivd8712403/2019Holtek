@@ -86,3 +86,4 @@ MDK_ARMv5/HT32/52352/Obj/ebi_lcd.crf
 MDK_ARMv5/HT32/52352/List/HT32.map
 MDK_ARMv5/HT32/52352/Obj/HT32.build_log.htm
 MDK_ARMv5/HT32/52352/Obj/HT32.htm
+*.htm
