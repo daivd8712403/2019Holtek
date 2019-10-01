@@ -70,7 +70,11 @@ void wsNVICConfig(void) {
 }
 
 void wsSetColor(u8 pixelNum, u8 red, u8 green, u8 blue) {
+<<<<<<< HEAD
 	u8 color_bit;
+=======
+	static u8 color_bit;
+>>>>>>> parent of 5f7addf... clear
 	didSetColor = FALSE;
 	for (color_bit = 0; color_bit < 8; color_bit += 1) {
 		WS2812[pixelNum][color_bit] = (green >> (7 - color_bit) & 1) == 1 ? WS_LOGIC_1 : WS_LOGIC_0;
@@ -115,8 +119,12 @@ void wsPrintBuffer(void) {
 	for(ws_i = 0; ws_i < WS_PIXEL; ws_i++) {
 		printf("WS2812[%d]: ", ws_i);
 		for(ws_j = 0; ws_j < WS_24BITS; ws_j++) {
+<<<<<<< HEAD
 			if(ws_j == 8 || ws_j == 16) printf(" ");
 			printf("%d ", (WS2812[ws_i][ws_j] == 38)? 1: 0 );
+=======
+			printf("%d ", WS2812[ws_i][ws_j]);
+>>>>>>> parent of 5f7addf... clear
 		}
 		printf("\r\n");
 	}
