@@ -1,10 +1,6 @@
 #include "ht32.h"
 
-<<<<<<< HEAD
-#define WS_RELOAD			(60)											// (48000000/800000)	
-=======
 #define WS_RELOAD			(60 - 1)											// (48000000/800000)	
->>>>>>> parent of 5f7addf... clear
 #define WS_PRESCALER	0
 #define WS_PIXEL			83														// LED pixels, music(80) + mode(3)
 #define WS_LOGIC_1		38														// High Bit Duty
@@ -14,11 +10,7 @@
 #define WS_GENERAL		80
 #define WS_GUIDE			81
 #define WS_GAME				82
-<<<<<<< HEAD
 #define WS_EXIT				10
-=======
-#define WS_EXIT				5
->>>>>>> parent of 5f7addf... clear
 #define WS_BLINK			400	
 
 void wsInit(void);

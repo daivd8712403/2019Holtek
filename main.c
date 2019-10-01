@@ -152,13 +152,10 @@ void GPTM1_IRQHandler(void) {
 	ws.tm++;
 	if(ws.tm >= WS_EXIT){
 		ws.tm = 0;
-<<<<<<< HEAD
 		if(didSetColor == TRUE) wsShow();
 		//wsShow();
-=======
 		//if(didSetColor == TRUE) wsShow();
 		wsShow();
->>>>>>> parent of 5f7addf... clear
 	}
 }
 
@@ -200,10 +197,7 @@ void BFTM0_IRQHandler(void) {
 				switchMode.flag = RESET;
 				printf("Switching mode starting at %d\r\n", mode);
 			}
-<<<<<<< HEAD
 			wsPrintBuffer();
-=======
->>>>>>> parent of 5f7addf... clear
 			switchMode.tm = RESET;
 			wsClearAll();
 			wsSetLeftArrow(10, 10, 10);
@@ -364,10 +358,7 @@ FlagStatus musicSwitch(void) {
 
 void wsSetMusicLED(u8 music, u8 buffer[]) {
 	static u8 i, j;
-<<<<<<< HEAD
 	wsClearAll();
-=======
->>>>>>> parent of 5f7addf... clear
 	for(i = 10; i > 0; i--) {
 		for(j = 0; j < 8; j++) {
 			if((buffer[music + i] >> j & 1) == 1) wsSetColor(80 - (i * 8 - j), 10, 10, 10);
